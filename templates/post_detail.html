@@ -7,12 +7,7 @@
       <img src='{{ instance.image.url }}' class="img-fluid" alt="Responsive image" ></br>
       {% endif %} 
       <div class="caption post-detail-item">
-        <h3>{{ instance.title }}</h3><small>{{ instance.timestamp|timesince }} ago
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}&title={{ instance.title }}"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ instance.title }}&summary={{ request.build_absolute_uri }}&source={{ request.build_absolute_uri }}"><i class="fa fa-linkedin"></i></a>
-        <a href="https://twitter.com/home?status={{ request.build_absolute_uri }}"><i class="fa fa-twitter"></i></a>
-        <a href="https://plus.google.com/share?url={{ request.build_absolute_uri }}"><i class="fa fa-google-plus"></i></a>
-    	</small></br>
+        <h3>{{ instance.title }}</h3><small>{{ instance.timestamp|timesince }} ago</small></br>
         <p>{{ instance.get_markdown }}</p><hr/>
     </div>
   </div>
