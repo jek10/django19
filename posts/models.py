@@ -40,7 +40,7 @@ class Post(models.Model):
 		ordering = ["-timestamp", "-updated"]
 	
 	def get_markdown(self):
-		content = self(content)
+		content = self.content
 		markdown_text = markdown(content)
 		return mark_safe(markdown_text)
 
