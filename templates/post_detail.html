@@ -6,9 +6,9 @@
     {% if instance.image %}
       <img src='{{ instance.image.url }}' class="img-fluid" alt="Responsive image" >
       {% endif %} 
-      <div class="caption post-detail-item">
+      <div class="caption post-detail-item" style="text-align: center;">
         <h3>{{ instance.title }}</h3><small>{{ instance.timestamp|timesince }} ago</small></br>
-        <p style="text-align: center;">{{ instance.get_markdown }}</p><hr/>
+        <p>{{ instance.get_markdown }}</p><hr/>
     </div>
   </div>
 </div>
