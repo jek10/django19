@@ -79,12 +79,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js'></script>
     <script type="text/javascript"> 
-  $( document ).ready(function(){
+         $( document ).ready(function(){
+
          $(".content-markdown").each(function(){
          var content = $(this).text()
          var markedContent = marked(content)
          $(this).html(markedContent)
         })
+
+         $(".post-detail-item img").each(function(){
+              $(this).addClass("img-responsive");
+
+         })
+    })
+
+
   </script>
   </body>
 </html>
