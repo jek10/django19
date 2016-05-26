@@ -37,6 +37,12 @@ h6, .h6 {
   max-width: 60rem;
 }
 
+.btn-success-outline {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: none;
+}
 
 /*
  * Masthead for nav
