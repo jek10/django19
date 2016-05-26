@@ -15,7 +15,7 @@ SECRET_KEY = '#nx7tuctv4=$_r$p7^h)2(m_j^p(d)(40ip=%h1%x6zs1k8jwt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://jekalviar.pythonanywhere.com',]
+ALLOWED_HOSTS = [http://jekalviar.pythonanywhere.com]
 
 
 # Application definition
